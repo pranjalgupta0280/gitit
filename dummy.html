@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dummy Contribution</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+    .box {
+      padding: 20px 40px;
+      border-radius: 12px;
+      background: white;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+    .number {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-top: 10px;
+      color: #ff6f61;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <p>Today’s totally useless number is:</p>
+    <div class="number" id="num"></div>
+  </div>
+
+  <script>
+    const randomNumber = Math.floor(Math.random() * 100) + 1;
+    document.getElementById("num").innerText = randomNumber;
+    console.log("Useless number generated:", randomNumber);
+  </script>
+</body>
+</html>
